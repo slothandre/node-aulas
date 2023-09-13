@@ -1,5 +1,3 @@
 import artistas from "./modules/module.mjs";
 
-for (const artista of artistas) {
-    console.log(`Artista: ${artista}`);
-}
+artistas.forEach(artista => console.log(`Artista: ${artista}`));
