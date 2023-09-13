@@ -1,24 +1,11 @@
-function soma(valor1, valor2){
-    return valor1 + valor2;
-};
+// import soma from "./modules/functions.mjs" // Importando um único recurso
+// import {soma, subtrai, multiplica, divide} from "./modules/functions.mjs"; // Importando diversos recursos
+import operacoes from "./modules/functions.mjs";
 
-function subtrai(valor1, valor2){
-    return valor1 - valor2;
-};
-
-function multiplica(valor1, valor2){
-    return valor1 * valor2;
-};
-
-function divide(valor1, valor2){
-    return valor1 / valor2;
-};
-
-
-let resultadoSoma = soma(10, 50);
-let resultadoSubtrai = subtrai(15, 5);
-let resultadoMultiplica = multiplica(2, 10);
-let resultadoDivide = divide(10, 2);
+let resultadoSoma = operacoes.soma(10, 50);
+let resultadoSubtrai = operacoes.subtrai(15, 5);
+let resultadoMultiplica = operacoes.multiplica(2, 10);
+let resultadoDivide = operacoes.divide(10, 2);
 
 console.log(`Soma: ${resultadoSoma}`);
 console.log(`Subtração ${resultadoSubtrai}`);
